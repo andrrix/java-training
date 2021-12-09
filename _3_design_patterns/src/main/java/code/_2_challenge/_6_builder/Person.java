@@ -15,7 +15,18 @@ public class Person {
         this.isMarried = builder.isMarried;
     }
 
-    static class Builder {
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", job='" + job + '\'' +
+                ", university='" + university + '\'' +
+                ", drivingLicense='" + drivingLicense + '\'' +
+                ", isMarried=" + isMarried +
+                '}';
+    }
+
+    public static class Builder {
         private final String name;
         private String job;
         private String university;

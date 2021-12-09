@@ -19,5 +19,9 @@ public class TeachingClassExample {
         for (int i = 0; i < javaTopics.length; i++) {
             teacher.teach(javaTopics[i]);
         }
+        System.out.println();
+        for (int i = 0; i < javaTopics.length; i++) {
+            teacher.notifyObservers(javaTopics[i]);
+        }
     }
 }

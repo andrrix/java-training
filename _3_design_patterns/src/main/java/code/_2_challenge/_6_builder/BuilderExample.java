@@ -14,5 +14,7 @@ public class BuilderExample {
                 .drivingLicense("B")
                 .isMarried(true)
                 .build();
+        System.out.println(person01);
+        System.out.println(person02);
     }
 }

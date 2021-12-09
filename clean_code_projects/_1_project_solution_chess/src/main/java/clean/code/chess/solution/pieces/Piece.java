@@ -12,6 +12,7 @@ public abstract class Piece {
     protected ChessBoard chessBoard;
 
     public Piece(Color color) {
+
         this.color = color;
     }
 
